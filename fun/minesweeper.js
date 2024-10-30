@@ -1,6 +1,4 @@
-<canvas id="c"></canvas>
-<script>
-    var w = 9, h = 9, bombs = 5, cellSize = 50
+var w = 9, h = 9, bombs = 5, cellSize = 50
     var canvas = document.getElementById('c')
     canvas.width = w * cellSize; canvas.height = h * cellSize
     var ctx = canvas.getContext('2d')
@@ -124,4 +122,3 @@
         e.preventDefault()
         processAction(e.clientX, e.clientY, (cell) => cell.flag())
     })
-</script>
