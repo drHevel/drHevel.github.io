@@ -1,7 +1,7 @@
 //TODO: FIX display, crash on bomb
 var boardSizeSlider = document.getElementById('boardSize');
 var bombsSlider = document.getElementById('mineDensity');
-var w = 9, h = 9, bombs = 5, cellSize = 50;
+var w = 9, h = 9, openCells = 81, flagsLeft = 5, bombs = 5, cellSize = 50;
 
 boardSizeSlider.oninput = function() {
     w = this.value;
@@ -10,6 +10,7 @@ boardSizeSlider.oninput = function() {
     field = init();
     canvas.width = w * cellSize;
     canvas.height = h * cellSize;
+    openCells = w * h;
     draw();
 };
 
@@ -21,6 +22,8 @@ bombsSlider.oninput = function() {
 
 function calcBombs() {
     bombs = Math.floor(h * w * bombsSlider.value * 0.1);
+    flagsLeft = bombs;
+    document.getElementById('flagsLeft').innerText = flagsLeft;
 }
 
 var canvas = document.getElementById('c');
@@ -59,6 +62,10 @@ Cell.prototype.click = function(field) {
     if (this.open || this.flagged) return true;
     if (this.bomb) return false;
     this.open = true;
+    openCells--;
+    if (openCells == bombs) {
+        eachCell(cell => { if (cell.bomb) cell.flag(); });
+    }
     var bombCount = this.countBombsAround(field);
     if (bombCount == 0) {
         var cells = this.cellsAround(field);
@@ -71,6 +78,12 @@ Cell.prototype.flag = function() {
     if (!this.open) {
         this.flagged = !this.flagged;
     }
+    if (this.flagged) {
+        flagsLeft--;
+    } else {
+        flagsLeft++;
+    }
+    document.getElementById('flagsLeft').innerText = flagsLeft;
 }
 
 Cell.prototype.countBombsAround = function(field) {
@@ -146,6 +159,8 @@ function finishGame(text) {
 
 function resetGame() {
     field = init();
+    openCells = w * h;
+    flagsLeft = bombs;
     draw();
 }
 
