@@ -144,6 +144,7 @@ function eachCell(fn) {
 }
 
 function gameWon() {
+    if (flagsLeft < 0) return false;
     var found = 0;
     eachCell(cell => { if (cell.bomb && cell.flagged) found++; });
     return bombs == found;
