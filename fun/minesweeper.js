@@ -1,7 +1,7 @@
 //TODO: FIX display, crash on bomb
 var boardSizeSlider = document.getElementById('boardSize');
 var bombsSlider = document.getElementById('mineDensity');
-var w = 9, h = 9, openCells = 81, flagsLeft = 5, bombs = 5, cellSize = 50;
+var w = 14, h = 14, openCells = 196, flagsLeft = 31, bombs = 31, cellSize = 50;
 
 boardSizeSlider.oninput = function() {
     w = this.value;
@@ -75,13 +75,14 @@ Cell.prototype.click = function(field) {
 };
 
 Cell.prototype.flag = function() {
+    if (this.flagged) {
+        flagsLeft++;
+    }
+    else if (!this.flagged &&  !this.open) {
+        flagsLeft--;
+    }
     if (!this.open) {
         this.flagged = !this.flagged;
-    }
-    if (this.flagged) {
-        flagsLeft--;
-    } else {
-        flagsLeft++;
     }
     document.getElementById('flagsLeft').innerText = flagsLeft;
 }
@@ -159,9 +160,10 @@ function finishGame(text) {
 
 function resetGame() {
     field = init();
+    draw();
     openCells = w * h;
     flagsLeft = bombs;
-    draw();
+    document.getElementById('flagsLeft').innerText = bombs;
 }
 
 function processAction(x, y, fn) {
