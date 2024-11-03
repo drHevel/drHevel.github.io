@@ -1,11 +1,22 @@
 //TODO: FIX display, crash on bomb
-var boardSizeSlider = document.getElementById('boardSize');
+var heightSlider = document.getElementById('boardHeight');
+var widthSlider = document.getElementById('boardWidth');
 var bombsSlider = document.getElementById('mineDensity');
 var w = 14, h = 14, openCells = 196, flagsLeft = 31, bombs = 31, cellSize = 50;
 
-boardSizeSlider.oninput = function() {
-    w = this.value;
+heightSlider.oninput = function() {
+    w = widthSlider.value;
     h = this.value;
+    calcBombs();
+    field = init();
+    canvas.width = w * cellSize;
+    canvas.height = h * cellSize;
+    openCells = w * h;
+    draw();
+};
+widthSlider.oninput = function() {
+    w = this.value;
+    h = heightSlider.value;
     calcBombs();
     field = init();
     canvas.width = w * cellSize;
