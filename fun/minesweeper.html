@@ -11,22 +11,35 @@
                 Flags Left
             </p>
             <p id="flagsLeft" style="font-weight:bold;font-size:3em">
-                31               
+                46               
             </p>
         </center>
     </div>
-    <div class="slidercontainer">
-        <h4>Board Width</h4>
-        <input type="range" min="4" max="24" value="14" class="slider" id="boardWidth">
-    </div>
-    <div class="slidercontainer">
-        <h4>Board Height</h4>
-        <input type="range" min="4" max="24" value="14" class="slider" id="boardHeight">
-    </div>
-    <div class="slidercontainer">
-        <h4>Mine Density</h4>
-        <input type="range" min="0.75" max="2.5" value="1.625" class="slider" step="any" id="mineDensity">
     <div>
+        <div class="slidercontainer">
+            <h4>Board Width</h4>
+            <input type="range" min="4" max="30" value="17" class="slider" id="boardWidth">
+        </div>
+        <p id="widthLabel">
+            17
+    </div>
+    <div>
+        <div class="slidercontainer">
+            <h4>Board Height</h4>
+            <input type="range" min="4" max="30" value="17" class="slider" id="boardHeight">
+        </div>
+        <p id="heightLabel">
+            17
+        </p>
+    </div>
+    <div>
+        <div class="slidercontainer">
+            <h4>Mine Density</h4>
+            <input type="range" min="0.75" max="2.5" value="1.625" class="slider" step="any" id="mineDensity">
+        </div>
+        <p id="densityLabel">
+            16.25%
+    </div>
         <canvas id="c"></canvas>
     </div>
 

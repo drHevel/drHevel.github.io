@@ -1,10 +1,13 @@
-//TODO: FIX display, crash on bomb
 var heightSlider = document.getElementById('boardHeight');
 var widthSlider = document.getElementById('boardWidth');
 var bombsSlider = document.getElementById('mineDensity');
-var w = 14, h = 14, openCells = 196, flagsLeft = 31, bombs = 31, cellSize = 50;
+var heightLabel = document.getElementById('heightLabel');
+var widthLabel = document.getElementById('widthLabel');
+var densityLabel = document.getElementById('densityLabel');
+var w = 17, h = 17, openCells = 196, flagsLeft = 46, bombs = 46, cellSize = 50;
 
 heightSlider.oninput = function() {
+    heightLabel.innerText = this.value;
     w = widthSlider.value;
     h = this.value;
     calcBombs();
@@ -15,6 +18,7 @@ heightSlider.oninput = function() {
     draw();
 };
 widthSlider.oninput = function() {
+    widthLabel.innerText = this.value;
     w = this.value;
     h = heightSlider.value;
     calcBombs();
@@ -26,6 +30,7 @@ widthSlider.oninput = function() {
 };
 
 bombsSlider.oninput = function() {
+    densityLabel.innerText = Math.round(this.value * 1000) / 100 + '%';
     calcBombs();
     field = init();
     draw();
