@@ -8,3 +8,8 @@ ul {
     margin: 0;
     padding: 0;
 }
+
+li {
+    font-size: 2em;
+    cursor: default;
+}
