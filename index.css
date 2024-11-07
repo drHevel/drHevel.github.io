@@ -47,3 +47,7 @@ li a:focus {
 li:hover, .navBtn:active {
     background-color: aquamarine;
 }
+
+body {
+    background-color: lightgray;
+}
