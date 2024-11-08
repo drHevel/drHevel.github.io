@@ -3,6 +3,7 @@
 <head>
     <title>Minesweeper</title>
     <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="minesweeper.css">
 </head>
 <body>
     <ul>
@@ -21,33 +22,34 @@
             </p>
         </center>
     </div>
-    <div>
+    <div class="horizontal">
         <div class="slidercontainer">
             <h4>Board Width</h4>
             <input type="range" min="4" max="30" value="17" class="slider" id="boardWidth">
-        </div>
         <p id="widthLabel">
             17
-    </div>
-    <div>
+        </p>
+        </div>
+
         <div class="slidercontainer">
             <h4>Board Height</h4>
             <input type="range" min="4" max="30" value="17" class="slider" id="boardHeight">
+            <p id="heightLabel">
+                17
+            </p>
         </div>
-        <p id="heightLabel">
-            17
-        </p>
-    </div>
-    <div>
+
         <div class="slidercontainer">
             <h4>Mine Density</h4>
             <input type="range" min="0.75" max="2.5" value="1.625" class="slider" step="any" id="mineDensity">
-        </div>
         <p id="densityLabel">
             16.25%
+        </p>
+        </div>
     </div>
+    <center>
         <canvas id="c"></canvas>
-    </div>
+    </center>
 
     <script type="text/javascript" src="minesweeper.js"></script>
 </body>
