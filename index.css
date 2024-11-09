@@ -1,8 +1,3 @@
-li { 
-    display: inline;
-
-}
-
 h1 {
     text-align: center;
     margin: 2%;
@@ -15,13 +10,14 @@ ul {
     background-color: slategray;
     font-size: 2em;
     color: black;
+    line-height: 1.5;
 }
 
 li {
     cursor: default;
     float: left;
     padding: 16px;
-    line-height: 1.5;
+    display: inline;
 }
 
 li.current {
@@ -50,4 +46,10 @@ li:hover, .navBtn:active {
 
 body {
     background-color: lightgray;
+}
+
+ul.secondary {
+    font-size: 1.5em;
+    line-height: 0.5;
+    margin: -10px;
 }
