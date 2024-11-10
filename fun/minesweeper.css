@@ -9,3 +9,10 @@ div.slidercontainer {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+    text-align: center;
+}
