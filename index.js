@@ -3,7 +3,7 @@ function fadeInOnScroll() {
   
     elementsToFade.forEach(element => {
       const elementTop = element.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight * 0.5;
+      const windowHeight = window.innerHeight * 0.6;
   
       if (elementTop < windowHeight) {
         element.classList.add("is-visible");

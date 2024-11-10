@@ -39,7 +39,7 @@ p {
 
 p.fade-in {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
 } 
 p.fade-in.is-visible {
     opacity: 1;
@@ -47,7 +47,7 @@ p.fade-in.is-visible {
   
 h2.fade-in {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
 } 
 h2.fade-in.is-visible {
     opacity: 1;
