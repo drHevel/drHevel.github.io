@@ -1,12 +1,12 @@
 h1 {
     text-align: center;
     margin: 2%;
-    font-size: 15vw;
+    font-size: 10vw;
 }
 h2 {
     text-align: center;
     margin: 2%;
-    font-size: 10vw;
+    font-size: 7vw;
 }
 
 a {
@@ -33,7 +33,9 @@ body {
 p {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 3vw;
+    width: 60%;
+    margin: auto;
     text-align: center;
 }
 
@@ -51,4 +53,8 @@ h2.fade-in {
 } 
 h2.fade-in.is-visible {
     opacity: 1;
+}
+
+#pagegap {
+    height: 5%;
 }
