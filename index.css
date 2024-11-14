@@ -1,12 +1,34 @@
 h1 {
     text-align: center;
-    margin: 2%;
-    font-size: 10vw;
+    margin: 0%;
+    font-size: 10em;
 }
 h2 {
     text-align: center;
     margin: 2%;
-    font-size: 7vw;
+    font-size: 7em;
+}
+h6 {
+    text-align: center;
+    margin: 2%;
+    font-size: 2em;
+}
+
+div.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#githubIcon {
+    width: 1em;
+    height: 1em;
+}
+
+#emailIcon {
+    width: 2em;
+    height: 2em;
 }
 
 a {
@@ -33,8 +55,8 @@ body {
 p {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    font-size: 3vw;
-    width: 60%;
+    font-size: 3em;
+    width: 75%;
     margin: auto;
     text-align: center;
 }
