@@ -14,4 +14,10 @@ function fadeInOnScroll() {
   }
   
   window.addEventListener("scroll", fadeInOnScroll);
+
+  function getAspectRatio() {
+    if (window.innerWidth / window.innerHeight < 1) {
+      return "portrait";
+    }
+  }
   

@@ -95,12 +95,13 @@ p {
     width: 80%; 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (orientation: portrait) {
     .column_left, .column_right {
         width: 100%;
     }
     .column_left {
-        margin: -2%;
+        margin: 0%;
+        padding: 0%;
         position: relative;
     }
     .column_right {
