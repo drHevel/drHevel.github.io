@@ -42,6 +42,9 @@ h6 {
     text-align: center;
 }
 a {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     text-decoration: none;
     color: rgb(4, 0, 73);
 }
