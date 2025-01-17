@@ -26,3 +26,21 @@ p.spacer {
     width: 100%;
     height: 10%;
 }
+
+@media screen and (orientation: portrait) {
+    p.description{
+        width: 100%;
+    }
+    img.WiseWaterScreenshotLeft {
+        width: 100%;
+        align-self: center;
+        margin:auto;
+        margin-top: 10%;
+    }
+    img.WiseWaterScreenshotRight {
+        width: 100%;
+        align-self: center;
+        margin:auto;
+        margin-bottom: 10%;
+    }
+}
