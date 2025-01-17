@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WiseWater</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="WiseWater.css">
+</head>
+<body>
+    <div class="row">
+        <div class="column_left">       
+            <h1>Dalton Hevel</h1>
+            <div class="contactInfo">
+                <h6><a href="mailto:daltonhevel@gmail.com"> <img src="/resources/mail.png" id="emailIcon"></a></h6>
+                <h6><a href="https://github.com/drHevel"> <img src="/resources/github.png" id="githubIcon"></a></h6>
+            </div>
+            <h2 class="about">About Me</h2>
+            <p class="aboutMe">
+                I recently graduated with a Bachelor's Degree in Computer Science from Wichita State University, looking to begin my career in software engineering. 
+                I have very strong problem solving and critical thinking skills, and a drive for continuous improvement. 
+                <br>
+                <br>
+                <a style="text-align:center" href="/resources/Resume.pdf">My Resume</a>
+            </p>
+        </div>
+
+        <div class="column_right">
+            <h2>WiseWater</h2>
+            <p>
+                <br>
+                WiseWater is an award-winning mobile application that was developed by myself, Marcos Vera Bareiros, and Eric Matthews to help those with fluid restriction diets keep track of their total fluid intake.
+            </p>
+            <p>
+                <br>
+                <br>
+            </p>
+            <div class="row">
+                <img class="WiseWaterScreenshotLeft" src="/WiseWater/WiseWaterHome.png">
+                <p class="description">
+                    The home screen of WiseWater shows the fluid meter along with the limit and current total. 
+                    The limit is set by the user in settings, and fluids can be added either by the "Add Fluids" button, which is a free input, 
+                    the "Quick Add" button, which leads to preset values, or by searching for a food.
+                </p>
+                <p class="spacer">
+                    <br>
+                </p>
+                <p class="description">
+                    The "Quick Add" screen has 6 preset buttons, and 2 custom buttons that can be set to match the user's favorite bottle or drink. 
+                    The custom button values are saved in the device's persistent storage, along with the Max Fluid value.
+                </p>
+                <img class="WiseWaterScreenshotRight" src="/WiseWater/WiseWaterButtons.png">
+                <p class="spacer">
+                    <br>
+                </p>
+                <img class="WiseWaterScreenshotLeft" src="/WiseWater/WiseWaterOver.png">
+                <p class="description">
+                    If fluids are added that puts the user over their daily limit, the blue fluid bar will be completely filled, and a red bar will begin to populate the fluid meter. 
+                </p>
+                <p class="spacer">
+                    <br>
+                </p>
+                <p class="description">
+                    Users can view their past history by clicking on the "View History" button in the top left. 
+                    History can be filtered by the past week, month, or all time, and indicates whether or not the user was within their daily limit they had set for that day. 
+                    The history page is implemented by a SQLite database, which was chosen for its lightweight nature and simple integration with .NET/C#.
+                
+                </p>
+                <img class="WiseWaterScreenshotRight" src="/WiseWater/WiseWaterHistory.png">
+                <p class="spacer">
+                    <br>
+                </p>
+                <img class="WiseWaterScreenshotLeft" src="/WiseWater/WiseWaterSearch.png">
+                <p class="description">
+                    The major, unique feature of this application is the ability for users to easily account for fluids consumed as foods. 
+                    This feature allows for more accurate, complete tracking. This data is pulled from USDA FoodData Central using their API endpoint. 
+                    On the left is an example search for "Apples", which populates a large list of different apple products, and their fluid content. 
+                </p>
+                <p class="spacer">
+                    <br>
+                </p>
+                <p class="description">
+                    When an entry is clicked on, it populates the screen with common portion sizes if available. 
+                    A user can then click on a portion, and enter how many portions they would like to add to the meter. 
+                    Alternatively, they can simply add how much they consumed by clicking the "Custom amount" button. 
+                </p>
+                <img class="WiseWaterScreenshotRight" src="/WiseWater/WiseWaterApple.png">
+                <p class="spacer">
+                    <br>
+                </p>
+            </div>
+            <p>
+                Overall, developing WiseWater was an incredibly enriching experience that gave me a lot of insight into the software development process as a whole. 
+                As the project's lead developer, I was personally responsible for most of the application and am very proud of how it turned out. 
+                At the completion of the project, it was presented at Wichita State University's 2024 Engineering Open House, where it won the Most Life Changing Award.
+            </p>
+            <p class="spacer">
+                <br>
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
