@@ -2,22 +2,22 @@ h1 {
     text-align: center;
     margin-top: 10%;
     margin-bottom: 0;
-    font-size: 4em;
+    font-size: 6vh;
 }
 h2 {
     text-align: center;
     margin: 2%;
-    font-size: 5em;
+    font-size:9vh;
 }
 h2.about {
     text-align: center;
     margin: 2%;
-    font-size: 2em;
+    font-size: 4vh;
 }
 h6 {
     text-align: center;
     margin: 2%;
-    font-size: 2em;
+    font-size: 3vh;
 }
 
 #githubIcon {
