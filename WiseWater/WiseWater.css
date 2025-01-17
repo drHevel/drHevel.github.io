@@ -1,16 +1,13 @@
-div.ladderLeft {
-    align-self: flex-start;
-    display: flex;
-}
-
-div.ladderRight {
-    align-self: flex-end;
-    display: flex;
+p {
+    font-size:3vh;
 }
 
 img.WiseWaterScreenshotLeft {
     width: 25%;
+    height: 100%;
     margin-left:10%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 p.description {
     width: 45%;
@@ -20,7 +17,10 @@ p.description {
 
 img.WiseWaterScreenshotRight {
     width: 25%;
-    margin-right:10%
+    height: 100%;
+    margin-right:10%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 p.spacer {
     width: 100%;
