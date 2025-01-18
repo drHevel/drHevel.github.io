@@ -4,7 +4,7 @@ var bombsSlider = document.getElementById('mineDensity');
 var heightLabel = document.getElementById('heightLabel');
 var widthLabel = document.getElementById('widthLabel');
 var densityLabel = document.getElementById('densityLabel');
-var w = 17, h = 17, openCells = 196, flagsLeft = 46, bombs = 46, cellSize = 50;
+var w = 17, h = 17, openCells = 196, flagsLeft = 46, bombs = 46, cellSize = 44;
 
 heightSlider.oninput = function() {
     heightLabel.innerText = this.value;

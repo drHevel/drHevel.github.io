@@ -1,13 +1,13 @@
 h1 {
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 0;
-    font-size: 6vh;
+    margin: 2%;
+    font-size:9vh;
 }
 h2 {
     text-align: center;
-    margin: 2%;
-    font-size:9vh;
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-size: 6vh;
 }
 h2.about {
     text-align: center;
@@ -19,80 +19,76 @@ h6 {
     margin: 2%;
     font-size: 3vh;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #githubIcon {
-    width: 0.5em;
-    height: 0.5em;
+    width: 2vh;
+    height: 2vh;
     text-align:right;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 #emailIcon {
-    width: 0.75em;
-    height: 0.75em;
-    vertical-align: top;
+    width: 3vh;
+    height: 2vh;
+    vertical-align: middle;
     text-align:left;
 }
-
+.contact {
+    background-color:transparent;
+}
 .contactInfo {
     flex: row;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: radial-gradient(#c5ebdf, #e7dabd)
 }
-a {
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    text-decoration: none;
-    color: rgb(4, 0, 73);
+button {
+    font-size: 4vh;
+    background-color: #c5ebdf;
+    border-radius: 1vh;
+    font-weight: bold;
+    border-width: 1vh;
+    border-color: #d2b5e2
 }
-a:hover {
-    text-decoration: none;
-    color: rgb(8, 0, 167);
-}
-a:active {
-    text-decoration: none;
-    color: black;
-}
-a:focus {
-    text-decoration: none;
-    color: black;
+button:hover {
+    background-color: #d7f3ea;
+    border-color: #d9c4e3;
 }
 
 body {
-    background-color: slategray;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-
+#resumeButton {
+    font-size: 2vh;
+    border-radius: 0.5vh;
+    border-width: 0.5vh;
+}
 p {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 3.5vh;
     width: 75%;
     margin: auto;
     text-align: center;
+    
 }
-
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-} 
-.fade-in.is-visible {
-    opacity: 1;
-}
-
-.row { 
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .column_left {
     width: 20%; 
-    height:102%;
-    background-color: rgb(88, 101, 114);
-    margin: -1%;
+    height:100%;
+    background-color: #e7dabd;
+    margin: 0%;
     position: fixed;
+    grid-column: 1;
 }
 
 .column_right {
@@ -100,24 +96,20 @@ p {
     width: 80%; 
 }
 
+.aboutMe {
+    font-size: 2vh;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
 @media screen and (orientation: portrait) {
     .column_left {
-        width: 102%;
-        margin-top: -1%;
-        margin-left: -1%;
-        margin-right: -1%;
+        width: 100%;
         margin-bottom: 2%;
-        padding: 0%;
         position: relative;
     }
     .column_right {
         margin: auto;
         width: 100%;
     }
-}
-
-.aboutMe {
-    font-size: 2vh;
-    text-align: center;
-    margin-bottom: 2%;
 }
